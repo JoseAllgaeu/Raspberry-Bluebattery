@@ -56,7 +56,7 @@ Dieser lokal installierte Container baut aus dem lokalem Netzwerk eine verschlü
 
 Nur ein Beispiel visualisierter, aufgezeichneter Daten.
 
-Die Grafana Dashboards:
+## Die Grafana Dashboards:
 
 Wohnbatterie - Status - BlueBattery
 
