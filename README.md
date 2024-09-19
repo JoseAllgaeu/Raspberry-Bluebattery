@@ -1,4 +1,4 @@
-# Raspberry-Bluebattery
+# Raspberry Bluebattery MQTT Telegraf Grafana
 ## Beschreibung
 
 POC für eine Darstellung von Messdaten aus dem Batteriecomputer “Bluebattery” mit Grafana.
