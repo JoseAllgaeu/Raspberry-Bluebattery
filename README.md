@@ -4,27 +4,27 @@
 POC für eine Darstellung von Messdaten aus dem Batteriecomputer “Bluebattery” mit Grafana.
 
 ## Ausstattung
-Raspberry Zero 2 WH
+- Raspberry Zero 2 WH
 
-Raspberry OS: Version 11 - Lite - Bookworm 64-bit
+- Raspberry OS: Version 11 - Lite - Bookworm 64-bit
 
-64 MB SD Karte
+- 64 MB SD Karte
 
-InfluxDB Version 1.8.10 - 64-bit
+- InfluxDB Version 1.8.10 - 64-bit
 
-Mosquitto Version  2.0.11
+- Mosquitto Version  2.0.11
 
-Telegraf 1.31.1-1 - 64-bit
+- Telegraf 1.31.1-1 - 64-bit
 
-Docker
+- Docker
 
-einen BlueBattery Batteriecomputer von Kai Scheffler
+- BlueBattery Batteriecomputer von Kai Scheffler
 	https://www.blue-battery.com/solar-und-batteriecomputer?Kategorie=Batteriecomputer
 
-Python Programm “BlueBattery” von Daniel Fett
+- Python Programm “BlueBattery” von Daniel Fett
 	https://github.com/danielfett/bluebattery.py
 
-Grafana Online
+- Grafana Online
 
 ## Abfolgebeschreibung
 
@@ -37,10 +37,12 @@ Um die Messdaten zu visualisieren bietet sich sehr gut Grafana an. Grafana kann 
 Es gibt noch eine andere Möglichkeit mit Grafana Online. Grafana Online kann nicht ohne weiteres auf die lokalen Influx Daten zugreifen. Es gibt hierzu die Möglichkeit ohne VPN oder ähnlich von Extern auf die Influx Datenbank zuzugreifen. Diese Funktion nennt sich: “Private data source connect (PDC) enables you to securely connect your Grafana Cloud stack to data sources hosted on a private network.” 
 
 Realisiert wird die Möglichkeit durch einen auf dem Raspberry zu installierenden Docker Container mit dem selben Namen: “Private Data Source Connect”.
+
 https://grafana.com/docs/grafana-cloud/connect-externally-hosted/private-data-source-connect/configure-pdc/
+
 https://grafana.com/docs/grafana-cloud/connect-externally-hosted/private-data-source-connect/scalability-and-security/
 
-Dieser lokal installierte Container baut aus dem lokalem Netzwerk eine verschlüsselte SSH Verbindung zu Grafana Cloud auf. Kurzum, über Grafana Cloud können die Messdaten nun visualisiert werden. Grafana Cloud ist in der kleinsten Ausprägung kostenfrei.
+Dieser lokal installierte Container baut aus dem lokalem Netzwerk eine verschlüsselte SSH Verbindung zu Grafana Cloud auf. Kurzum, über Grafana Cloud können nun die Messdaten visualisiert werden. Grafana Cloud ist in der kleinsten Ausprägung kostenfrei.
 
 Screenshots
 
@@ -111,9 +113,12 @@ https://github.com/influxdata/telegraf/tree/master/plugins/inputs/mqtt_consumer
 ```
 
 Die weitere Konfiguration für Telegraf selbst, Telegraf und InlfuxDB 1.0 hier:
+
 https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md
+
 https://github.com/influxdata/telegraf/tree/master/plugins/outputs/influxdb
 
+### MQTT Explorer
 Zur Kontrolle, ob die MQTT Datenkette von dem Batteriecomputer, der Phyton Software über den MQTT-Brocker funktioniert, bietet sich der MQTT-Explorer an. Einfach mit der IP-Adresse / DNS-Namen und Port 1883 mit dem Raspberry verbinden.
 Webseite: https://mqtt-explorer.com/
 
