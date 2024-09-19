@@ -87,7 +87,15 @@ sudo systemctl stop bb.service
 ```
 
 ### Mosquitto
-Der MQTT-Brocker Mosquitto hat keine Besonderheiten. Die Konfiguration:
+Der MQTT-Brocker Mosquitto hat keine Besonderheiten. 
+
+```
+sudo apt install mosquitto mosquitto-clients
+sudo systemctl enable mosquitto
+sudo systemctl start mosquitto
+```
+
+Die Konfiguration:
 
 ```
 log_dest file /var/log/mosquitto/mosquitto.log
