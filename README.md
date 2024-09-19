@@ -74,9 +74,9 @@ Bitte beim Anlegen der Datenbank die Data-Retention-Policy berücksichtigen. Die
 ### “BlueBattery”
 Installation des Python Programm “BlueBattery” von Daniel Fett, Beschreibung hier: https://github.com/danielfett/bluebattery.py. Das Python Programm sendet fortlaufend MQTT Daten. Die Erfassungsfrequenz ist idealerweise durch einen Cron-Job in Kombination mit einem Script auf 5 Minuten für eine Dauer von 30 Sekunden eingerichtet. 5 Minuten sind m.E. ausreichend. Bietet zugleich den Vorteil, dass für die Smartphone App “BlueBattery” die Bluetooth Verbindung für diesen Zeitraum belegt ist. Im Gegenzug ist für das Python Programm die Bluetooth Verbindung belegt.
 
-sudo systemctl start bb.service
+```sudo systemctl start bb.service
 sleep 33s
-sudo systemctl stop bb.service
+sudo systemctl stop bb.service```
 
 ### Mosquitto
 Der MQTT-Brocker Mosquitto hat keine Besonderheiten. Die Konfiguration:
@@ -90,7 +90,7 @@ connection_messages true
 Telegraf hat ein paar Besonderheiten. Die Konfiguration für den Broadcast der MQTT Daten, die gespeichert werden sollen, muss beschrieben werden. Hier der MQTT Teil in der Telegraf Konfigurationsdatei. Die Bluetooth MAC Adresse AA:BB:CC:DD:EE  ist entsprechend dem vorhanden Bluebattery Batterie Computer anzupassen.
 https://github.com/influxdata/telegraf/tree/master/plugins/inputs/mqtt_consumer
 
-`#BBB MQTT Input Configuration
+```#BBB MQTT Input Configuration
 
  [[inputs.mqtt_consumer]]
 	servers = ["tcp://127.0.0.1:1883"]
@@ -102,7 +102,7 @@ https://github.com/influxdata/telegraf/tree/master/plugins/inputs/mqtt_consumer
 	topic = "service/bluebattery/FC:AA:BB:CC:DD:EE/live/solar_charger/max_solar_current_day_A"
 	measurement = "measurement/_/_/_/_/_"
 	tags = "_/site/uuid/live/messpfad1/field"
-	fields = "_/_/_/_/_/value"`
+	fields = "_/_/_/_/_/value"```
 
 Die weitere Konfiguration für Telegraf selbst, Telegraf und InlfuxDB 1.0 hier:
 https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md
