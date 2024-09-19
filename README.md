@@ -1,4 +1,4 @@
-# Raspberry-Bluebattery
+![image](https://github.com/user-attachments/assets/98832141-edae-4dbf-b3d7-4822095cb86d)# Raspberry-Bluebattery
 Beschreibung
 
 POC für eine Darstellung von Messdaten aus dem Batteriecomputer “Bluebattery” mit Grafana.
@@ -110,7 +110,7 @@ Webseite: https://mqtt-explorer.com/
 
 Screenshot
 
-
+![image](https://github.com/user-attachments/assets/25fa8759-41c8-40e0-a833-bef2182960ae)
 
 Kontrolle ob die Daten in die Influx Datenbank geschrieben wurden
 
@@ -122,13 +122,13 @@ und weiter: https://docs.docker.com/engine/install/linux-postinstall/#configure-
 Grafana Online, PDC Konfiguration
 Unter dem Menüpunkt: Home / Conncection / Private data source connect mit der Schaltfläche “Add new network” ein neues Netzwerk hinzufügen, Namen vergeben.
 Docker auswählen:
-
+![image](https://github.com/user-attachments/assets/fa04937c-072c-412a-abdd-f4f1f26ac4a1)
 
 Einen Token generieren:
-
+![image](https://github.com/user-attachments/assets/821d0ee6-5db2-463a-9b92-5ae04b474f3a)
 
 Nun wird ein Token generiert und dieser wird in dieser CMD-Line eingetragen. Diese CMD-Line in die Zwischenablage nehmen und auf dem Raspberry ausführen. Hinweis den Token ist hier im Screenshot nicht übernommen. Statt dessen wird der Platzhalter GCLOUD_PDC_SIGNING_TOKEN gezeigt:
-
+![image](https://github.com/user-attachments/assets/e2bc335a-7d75-4b8f-8f84-70adcdae44c9)
  
 Nun auf dem Raspberry mit dem generierten Token die CMD-Line ausführen. Hinweis, der Docker Container ist nur für ein Raspberry OS 64-bit vorgesehen.
 
@@ -136,23 +136,22 @@ sudo docker run --name pdc-agent grafana/pdc-agent:latest -token GCLOUD_PDC_SIGN
 
 
 Nach erfolgter Installation die Verbindung prüfen:
-
+![image](https://github.com/user-attachments/assets/39aeb09f-0988-4078-a83e-b2f3e6ffd331)
 
 Nun mit “Create a new datasource” weiter:
-
+![image](https://github.com/user-attachments/assets/b24cc1a6-bb77-4aa8-8f86-9ae9011b0003)
  
 Auswahl von InfluxDB:
-
+![image](https://github.com/user-attachments/assets/309486b6-6d7c-464a-887e-60b2422838c8)
  
 Einen beliebigen Namen für die “Data source” bestimmen:
-
+![image](https://github.com/user-attachments/assets/4477099a-695a-41a8-b6ca-856139837d15)
  
 Hier wird nun die IP-Adresse / DNS-Namen des Raspberry mit dem Port 8086 für die InfluxDB Instanz angegeben:
-
+![image](https://github.com/user-attachments/assets/19fc02e3-ff39-4e2d-9f2f-5d57bf4f4fe8)
 
 Zuletzt den Datenbank Name, der der InfluxDB bzw. Telegraf Konfiguration als Datenbank zugrunde liegt, in dem Feld “Database” eintragen:
-
-  
+![image](https://github.com/user-attachments/assets/8657acbc-6c95-41aa-bb54-701f62354705)
 
 Zuletzt die BlueBattery Dashboards hinzufügen. 
 Zuvor mit Notepad / Notepad++ in den Dashboard “JSON”-Dateien die Bluetooth MAC Adresse AA:BB:CC:DD:EE gegen die MAC-Adresse des vorhandenen Bluebattery Batterie Computer ersetzten
