@@ -8,7 +8,7 @@ POC für eine Darstellung von Messdaten aus dem Batteriecomputer “Bluebattery�
 
 - Raspberry OS: Version 11 - Lite - Bookworm 64-bit
 
-- 64 MB SD Karte
+- 64 GB SD Karte
 
 - InfluxDB Version 1.8.10 - 64-bit
 
