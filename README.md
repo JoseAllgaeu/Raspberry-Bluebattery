@@ -45,6 +45,9 @@ Dieser lokal installierte Container baut aus dem lokalem Netzwerk eine verschlü
 
 Screenshots
 
+![image](https://github.com/user-attachments/assets/c1c0ec49-bd06-4826-8df0-60413fc8fae5)
+
+
 Nur ein Beispiel visualisierter, aufgezeichneter Daten.
 
 Die Grafana Dashboards:
