@@ -44,7 +44,7 @@ https://grafana.com/docs/grafana-cloud/connect-externally-hosted/private-data-so
 
 Dieser lokal installierte Container baut aus dem lokalem Netzwerk eine verschlüsselte SSH Verbindung zu Grafana Cloud auf. Kurzum, über Grafana Cloud können nun die Messdaten visualisiert werden. Grafana Cloud ist in der kleinsten Ausprägung kostenfrei.
 
-Screenshots
+## Screenshots
 
 ![image](https://github.com/user-attachments/assets/c1c0ec49-bd06-4826-8df0-60413fc8fae5)
 
