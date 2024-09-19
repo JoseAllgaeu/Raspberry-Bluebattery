@@ -82,7 +82,7 @@ Installation des Python Programm “BlueBattery” von Daniel Fett, Beschreibung
 
 ```
 sudo systemctl start bb.service
-sleep 33s
+sleep 36s
 sudo systemctl stop bb.service
 ```
 
