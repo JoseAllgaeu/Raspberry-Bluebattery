@@ -1,33 +1,23 @@
 # Raspberry-Bluebattery
-Beschreibung
+## Beschreibung
 
 POC für eine Darstellung von Messdaten aus dem Batteriecomputer “Bluebattery” mit Grafana.
 
-Ausstattung
-
+## Ausstattung
 Raspberry Zero 2 WH
-
 Raspberry OS: Version 11 - Lite - Bookworm 64-bit
-
 64 MB SD Karte
-
 InfluxDB Version 1.8.10 - 64-bit
-
 Mosquitto Version  2.0.11
-
 Telegraf 1.31.1-1 - 64-bit
-
 Docker
-
 einen BlueBattery Batteriecomputer von Kai Scheffler
-https://www.blue-battery.com/solar-und-batteriecomputer?Kategorie=Batteriecomputer
-
+	https://www.blue-battery.com/solar-und-batteriecomputer?Kategorie=Batteriecomputer
 Python Programm “BlueBattery” von Daniel Fett
-https://github.com/danielfett/bluebattery.py
-
+	https://github.com/danielfett/bluebattery.py
 Grafana Online
 
-Abfolgebeschreibung
+## Abfolgebeschreibung
 
 Der Raspberry nimmt die Daten auf, die der Bluebattery Batteriecomputer per Bluetooth versendet. Hierzu dient das Pyhton Programm “BlueBattery” von Daniel Fett: “Software for interacting with the BlueBattery line of battery computers for RVs”.
 
@@ -65,7 +55,7 @@ Die Grafana Dashboards:
 
 4
 
-Details
+## Details
 
 Raspberry OS als 64-bit Lite Version. 
 
@@ -87,7 +77,7 @@ connection_messages true
 Telegraf hat ein paar Besonderheiten. Die Konfiguration für den Broadcast der MQTT Daten, die gespeichert werden sollen, muss beschrieben werden. Hier der MQTT Teil in der Telegraf Konfigurationsdatei. Die Bluetooth MAC Adresse AA:BB:CC:DD:EE  ist entsprechend dem vorhanden Bluebattery Batterie Computer anzupassen.
 https://github.com/influxdata/telegraf/tree/master/plugins/inputs/mqtt_consumer
 
-#BBB MQTT Input Configuration
+`#BBB MQTT Input Configuration
 
  [[inputs.mqtt_consumer]]
 	servers = ["tcp://127.0.0.1:1883"]
@@ -99,7 +89,7 @@ https://github.com/influxdata/telegraf/tree/master/plugins/inputs/mqtt_consumer
 	topic = "service/bluebattery/FC:AA:BB:CC:DD:EE/live/solar_charger/max_solar_current_day_A"
 	measurement = "measurement/_/_/_/_/_"
 	tags = "_/site/uuid/live/messpfad1/field"
-	fields = "_/_/_/_/_/value"
+	fields = "_/_/_/_/_/value"`
 
 Die weitere Konfiguration für Telegraf selbst, Telegraf und InlfuxDB 1.0 hier:
 https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md
@@ -111,8 +101,6 @@ Webseite: https://mqtt-explorer.com/
 Screenshot
 
 ![image](https://github.com/user-attachments/assets/25fa8759-41c8-40e0-a833-bef2182960ae)
-
-Kontrolle ob die Daten in die Influx Datenbank geschrieben wurden
 
 Docker Installation
 Eine Anleitung zur Installation findet sich hier: https://docs.docker.com/engine/install/debian/#installation-methods. 
