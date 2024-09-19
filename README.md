@@ -107,6 +107,8 @@ connection_messages true
 ### Telegraf 
 Telegraf hat ein paar Besonderheiten. Die Konfiguration für den Broadcast der MQTT Daten, die gespeichert werden sollen, muss beschrieben werden. Hier der MQTT Teil in der Telegraf Konfigurationsdatei. Die Bluetooth MAC Adresse `AA:BB:CC:DD:EE` ist entsprechend dem vorhanden Bluebattery Batterie Computer anzupassen.
 
+https://www.influxdata.com/downloads/
+
 https://github.com/influxdata/telegraf/tree/master/plugins/inputs/mqtt_consumer
 
 ```
