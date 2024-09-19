@@ -109,7 +109,6 @@ Zur Kontrolle, ob die MQTT Datenkette von dem Batteriecomputer, der Phyton Softw
 Webseite: https://mqtt-explorer.com/
 
 Screenshot
-
 ![image](https://github.com/user-attachments/assets/25fa8759-41c8-40e0-a833-bef2182960ae)
 
 Kontrolle ob die Daten in die Influx Datenbank geschrieben wurden
