@@ -69,10 +69,10 @@ Die Grafana Dashboards:
 ## Details
 
 ### Raspberry OS als 64-bit Lite Version
-Version 11 - Lite - Bookworm 64-bit
+Version 11 - Lite - Bookworm als 64-bit
 https://www.raspberrypi.com/software/operating-systems/#raspberry-pi-os-legacy-64-bit
 
-### InfluxDB 64 bit
+### InfluxDB 1.8.10 - 64-bit
 Bitte beim Anlegen der Datenbank die Data-Retention-Policy berücksichtigen. Die Datenbanken werden einfach zu groß. Influx ist bis zu 1 Million Datensätze ausgelegt. Aus eigenen Versuchen heraus ist mit 1,7 Millionen Datensätze die Leistungsgrenze längst erreicht.
 
 https://www.influxdata.com/downloads/
@@ -104,7 +104,7 @@ allow_anonymous true
 connection_messages true
 ```
 
-### Telegraf 
+### Telegraf 1.31.1-1 - 64-bit
 Telegraf hat ein paar Besonderheiten. Die Konfiguration für den Broadcast der MQTT Daten, die gespeichert werden sollen, muss beschrieben werden. Hier der MQTT Teil in der Telegraf Konfigurationsdatei. Die Bluetooth MAC Adresse `AA:BB:CC:DD:EE` ist entsprechend dem vorhanden Bluebattery Batterie Computer anzupassen.
 
 https://www.influxdata.com/downloads/
