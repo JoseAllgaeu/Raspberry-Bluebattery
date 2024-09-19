@@ -57,16 +57,19 @@ Die Grafana Dashboards:
 
 ## Details
 
-Raspberry OS als 64-bit Lite Version. 
+## Raspberry OS als 64-bit Lite Version
 
-InfluxDB 64 bit. Bitte beim Anlegen der Datenbank die Data-Retention-Policy berücksichtigen. Die Datenbanken werden einfach zu groß. Influx ist bis zu 1 Million Datensätze ausgelegt. Aus eigenen Versuchen heraus ist mit 1,7 Millionen Datensätze die Leistungsgrenze längst erreicht.
+## InfluxDB 64 bit
+Bitte beim Anlegen der Datenbank die Data-Retention-Policy berücksichtigen. Die Datenbanken werden einfach zu groß. Influx ist bis zu 1 Million Datensätze ausgelegt. Aus eigenen Versuchen heraus ist mit 1,7 Millionen Datensätze die Leistungsgrenze längst erreicht.
 
+## “BlueBattery”
 Installation des Python Programm “BlueBattery” von Daniel Fett, Beschreibung hier: https://github.com/danielfett/bluebattery.py. Das Python Programm sendet fortlaufend MQTT Daten. Die Erfassungsfrequenz ist idealerweise durch einen Cron-Job in Kombination mit einem Script auf 5 Minuten für eine Dauer von 30 Sekunden eingerichtet. 5 Minuten sind m.E. ausreichend. Bietet zugleich den Vorteil, dass für die Smartphone App “BlueBattery” die Bluetooth Verbindung für diesen Zeitraum belegt ist. Im Gegenzug ist für das Python Programm die Bluetooth Verbindung belegt.
 
 sudo systemctl start bb.service
 sleep 33s
 sudo systemctl stop bb.service
 
+## Mosquitto
 Der MQTT-Brocker Mosquitto hat keine Besonderheiten. Die Konfiguration:
 
 log_dest file /var/log/mosquitto/mosquitto.log
@@ -74,6 +77,7 @@ listener 1883
 allow_anonymous true
 connection_messages true
 
+## Telegraf 
 Telegraf hat ein paar Besonderheiten. Die Konfiguration für den Broadcast der MQTT Daten, die gespeichert werden sollen, muss beschrieben werden. Hier der MQTT Teil in der Telegraf Konfigurationsdatei. Die Bluetooth MAC Adresse AA:BB:CC:DD:EE  ist entsprechend dem vorhanden Bluebattery Batterie Computer anzupassen.
 https://github.com/influxdata/telegraf/tree/master/plugins/inputs/mqtt_consumer
 
@@ -102,12 +106,12 @@ Screenshot
 
 ![image](https://github.com/user-attachments/assets/25fa8759-41c8-40e0-a833-bef2182960ae)
 
-Docker Installation
+## Docker Installation
 Eine Anleitung zur Installation findet sich hier: https://docs.docker.com/engine/install/debian/#installation-methods. 
 Nachfolgende Scripts: https://docs.docker.com/engine/install/linux-postinstall/ 
 und weiter: https://docs.docker.com/engine/install/linux-postinstall/#configure-docker-to-start-on-boot-with-systemd.
 
-Grafana Online, PDC Konfiguration
+## Grafana Online, PDC Konfiguration
 Unter dem Menüpunkt: Home / Conncection / Private data source connect mit der Schaltfläche “Add new network” ein neues Netzwerk hinzufügen, Namen vergeben.
 Docker auswählen:
 
