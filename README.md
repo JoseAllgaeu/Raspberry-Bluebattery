@@ -94,6 +94,7 @@ connection_messages true
 
 ### Telegraf 
 Telegraf hat ein paar Besonderheiten. Die Konfiguration für den Broadcast der MQTT Daten, die gespeichert werden sollen, muss beschrieben werden. Hier der MQTT Teil in der Telegraf Konfigurationsdatei. Die Bluetooth MAC Adresse AA:BB:CC:DD:EE ist entsprechend dem vorhanden Bluebattery Batterie Computer anzupassen.
+
 https://github.com/influxdata/telegraf/tree/master/plugins/inputs/mqtt_consumer
 
 ```
@@ -120,6 +121,7 @@ https://github.com/influxdata/telegraf/tree/master/plugins/outputs/influxdb
 
 ### MQTT Explorer
 Zur Kontrolle, ob die MQTT Datenkette von dem Batteriecomputer, der Phyton Software über den MQTT-Brocker funktioniert, bietet sich der MQTT-Explorer an. Einfach mit der IP-Adresse / DNS-Namen und Port 1883 mit dem Raspberry verbinden.
+
 Webseite: https://mqtt-explorer.com/
 
 Screenshot
@@ -127,9 +129,12 @@ Screenshot
 ![image](https://github.com/user-attachments/assets/25fa8759-41c8-40e0-a833-bef2182960ae)
 
 ### Docker Installation
-Eine Anleitung zur Installation findet sich hier: https://docs.docker.com/engine/install/debian/#installation-methods. 
-Nachfolgende Scripts: https://docs.docker.com/engine/install/linux-postinstall/ 
-und weiter: https://docs.docker.com/engine/install/linux-postinstall/#configure-docker-to-start-on-boot-with-systemd.
+Eine Anleitung zur Installation findet sich hier: 
+https://docs.docker.com/engine/install/debian/#installation-methods. 
+Nachfolgende Scripts: 
+https://docs.docker.com/engine/install/linux-postinstall/ 
+und weiter: 
+https://docs.docker.com/engine/install/linux-postinstall/#configure-docker-to-start-on-boot-with-systemd.
 
 ### Grafana Online, PDC Konfiguration
 Unter dem Menüpunkt: Home / Conncection / Private data source connect mit der Schaltfläche “Add new network” ein neues Netzwerk hinzufügen, Namen vergeben.
