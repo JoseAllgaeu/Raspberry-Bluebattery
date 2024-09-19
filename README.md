@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/98832141-edae-4dbf-b3d7-4822095cb86d)# Raspberry-Bluebattery
+# Raspberry-Bluebattery
 Beschreibung
 
 POC für eine Darstellung von Messdaten aus dem Batteriecomputer “Bluebattery” mit Grafana.
@@ -148,10 +148,10 @@ Einen beliebigen Namen für die “Data source” bestimmen:
 ![image](https://github.com/user-attachments/assets/4477099a-695a-41a8-b6ca-856139837d15)
  
 Hier wird nun die IP-Adresse / DNS-Namen des Raspberry mit dem Port 8086 für die InfluxDB Instanz angegeben:
-![image](https://github.com/user-attachments/assets/19fc02e3-ff39-4e2d-9f2f-5d57bf4f4fe8)
+![image](https://github.com/user-attachments/assets/b3465487-c78c-4297-ad1a-40c2ddb2dd6c)
 
 Zuletzt den Datenbank Name, der der InfluxDB bzw. Telegraf Konfiguration als Datenbank zugrunde liegt, in dem Feld “Database” eintragen:
-![image](https://github.com/user-attachments/assets/8657acbc-6c95-41aa-bb54-701f62354705)
+![image](https://github.com/user-attachments/assets/cb7013bb-1b04-4be3-8f18-5cd0b7d01034)
 
 Zuletzt die BlueBattery Dashboards hinzufügen. 
 Zuvor mit Notepad / Notepad++ in den Dashboard “JSON”-Dateien die Bluetooth MAC Adresse AA:BB:CC:DD:EE gegen die MAC-Adresse des vorhandenen Bluebattery Batterie Computer ersetzten
