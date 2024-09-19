@@ -58,13 +58,13 @@ Nur ein Beispiel visualisierter, aufgezeichneter Daten.
 
 Die Grafana Dashboards:
 
-1
+Wohnbatterie - Status - BlueBattery
 
-2
+Wohnbatterie - Tagesdaten Balken - BlueBattery
 
-3
+Wohnbatterie - Solar - BlueBattery
 
-4
+BlueBattery - Live Messungen Debuging
 
 ## Details
 
