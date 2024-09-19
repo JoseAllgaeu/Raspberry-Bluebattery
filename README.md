@@ -47,6 +47,11 @@ Screenshots
 
 ![image](https://github.com/user-attachments/assets/c1c0ec49-bd06-4826-8df0-60413fc8fae5)
 
+![image](https://github.com/user-attachments/assets/3c9caad7-8803-499e-a11c-e027b69c61a4)
+
+![image](https://github.com/user-attachments/assets/d4261f6e-c875-46a7-89c4-97fb0d7ab994)
+
+![image](https://github.com/user-attachments/assets/ddf65c3c-660c-49b8-a4b7-1a627b520cde)
 
 Nur ein Beispiel visualisierter, aufgezeichneter Daten.
 
