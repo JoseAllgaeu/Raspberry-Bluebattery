@@ -93,7 +93,7 @@ connection_messages true
 ```
 
 ### Telegraf 
-Telegraf hat ein paar Besonderheiten. Die Konfiguration für den Broadcast der MQTT Daten, die gespeichert werden sollen, muss beschrieben werden. Hier der MQTT Teil in der Telegraf Konfigurationsdatei. Die Bluetooth MAC Adresse AA:BB:CC:DD:EE ist entsprechend dem vorhanden Bluebattery Batterie Computer anzupassen.
+Telegraf hat ein paar Besonderheiten. Die Konfiguration für den Broadcast der MQTT Daten, die gespeichert werden sollen, muss beschrieben werden. Hier der MQTT Teil in der Telegraf Konfigurationsdatei. Die Bluetooth MAC Adresse `AA:BB:CC:DD:EE` ist entsprechend dem vorhanden Bluebattery Batterie Computer anzupassen.
 
 https://github.com/influxdata/telegraf/tree/master/plugins/inputs/mqtt_consumer
 
@@ -146,7 +146,7 @@ Einen Token generieren:
 
 ![image](https://github.com/user-attachments/assets/821d0ee6-5db2-463a-9b92-5ae04b474f3a)
 
-Nun wird ein Token generiert und dieser wird in dieser CMD-Line eingetragen. Diese CMD-Line in die Zwischenablage nehmen und auf dem Raspberry ausführen. Hinweis den Token ist hier im Screenshot nicht übernommen. Statt dessen wird der Platzhalter GCLOUD_PDC_SIGNING_TOKEN gezeigt:
+Nun wird ein Token generiert und dieser wird in dieser CMD-Line eingetragen. Diese CMD-Line in die Zwischenablage nehmen und auf dem Raspberry ausführen. Hinweis den Token ist hier im Screenshot nicht übernommen. Statt dessen wird der Platzhalter `GCLOUD_PDC_SIGNING_TOKEN` gezeigt:
 
 ![image](https://github.com/user-attachments/assets/e2bc335a-7d75-4b8f-8f84-70adcdae44c9)
  
@@ -181,7 +181,7 @@ Zuletzt den Datenbank Name, der der InfluxDB bzw. Telegraf Konfiguration als Dat
 ![image](https://github.com/user-attachments/assets/cb7013bb-1b04-4be3-8f18-5cd0b7d01034)
 
 Zuletzt die BlueBattery Dashboards hinzufügen. 
-Zuvor mit Notepad / Notepad++ in den Dashboard “JSON”-Dateien die Bluetooth MAC Adresse AA:BB:CC:DD:EE gegen die MAC-Adresse des vorhandenen Bluebattery Batterie Computer ersetzten
+Zuvor mit Notepad / Notepad++ in den Dashboard “JSON”-Dateien die Bluetooth MAC Adresse `AA:BB:CC:DD:EE` gegen die MAC-Adresse des vorhandenen Bluebattery Batterie Computer ersetzten
 Hier eine Beispielszeile, kommt in der “JSON” Datei öfters vor:
 
 ```
