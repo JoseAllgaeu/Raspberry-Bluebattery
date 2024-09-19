@@ -69,9 +69,13 @@ Die Grafana Dashboards:
 ## Details
 
 ### Raspberry OS als 64-bit Lite Version
+Version 11 - Lite - Bookworm 64-bit
+https://www.raspberrypi.com/software/operating-systems/#raspberry-pi-os-legacy-64-bit
 
 ### InfluxDB 64 bit
 Bitte beim Anlegen der Datenbank die Data-Retention-Policy berücksichtigen. Die Datenbanken werden einfach zu groß. Influx ist bis zu 1 Million Datensätze ausgelegt. Aus eigenen Versuchen heraus ist mit 1,7 Millionen Datensätze die Leistungsgrenze längst erreicht.
+
+https://www.influxdata.com/downloads/
 
 ### “BlueBattery”
 Installation des Python Programm “BlueBattery” von Daniel Fett, Beschreibung hier: https://github.com/danielfett/bluebattery.py. Das Python Programm sendet fortlaufend MQTT Daten. Die Erfassungsfrequenz ist idealerweise durch einen Cron-Job in Kombination mit einem Script auf 5 Minuten für eine Dauer von 30 Sekunden eingerichtet. 5 Minuten sind m.E. ausreichend. Bietet zugleich den Vorteil, dass für die Smartphone App “BlueBattery” die Bluetooth Verbindung für diesen Zeitraum belegt ist. Im Gegenzug ist für das Python Programm die Bluetooth Verbindung belegt.
@@ -129,11 +133,16 @@ Screenshot
 ![image](https://github.com/user-attachments/assets/25fa8759-41c8-40e0-a833-bef2182960ae)
 
 ### Docker Installation
-Eine Anleitung zur Installation findet sich hier: 
+Eine Anleitung zur Installation findet sich hier:
+
 https://docs.docker.com/engine/install/debian/#installation-methods. 
+
 Nachfolgende Scripts: 
+
 https://docs.docker.com/engine/install/linux-postinstall/ 
+
 und weiter: 
+
 https://docs.docker.com/engine/install/linux-postinstall/#configure-docker-to-start-on-boot-with-systemd.
 
 ### Grafana Online, PDC Konfiguration
