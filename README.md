@@ -140,8 +140,9 @@ Nun wird ein Token generiert und dieser wird in dieser CMD-Line eingetragen. Die
  
 Nun auf dem Raspberry mit dem generierten Token die CMD-Line ausführen. Hinweis, der Docker Container ist nur für ein Raspberry OS 64-bit vorgesehen.
 
+```
 sudo docker run --name pdc-agent grafana/pdc-agent:latest -token GCLOUD_PDC_SIGNING_TOKEN -cluster prod-eu-west-2 -gcloud-hosted-grafana-id 683208
-
+```
 
 Nach erfolgter Installation die Verbindung prüfen:
 
@@ -171,6 +172,6 @@ Zuletzt die BlueBattery Dashboards hinzufügen.
 Zuvor mit Notepad / Notepad++ in den Dashboard “JSON”-Dateien die Bluetooth MAC Adresse AA:BB:CC:DD:EE gegen die MAC-Adresse des vorhandenen Bluebattery Batterie Computer ersetzten
 Hier eine Beispielszeile, kommt in der “JSON” Datei öfters vor:
 
+```
 "value": "service/bluebattery/FC:AA:BB:CC:DD:EE/live/measurement/battery_voltage_V"
-
-kk
+```
