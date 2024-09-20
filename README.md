@@ -127,7 +127,7 @@ https://github.com/influxdata/telegraf/tree/master/plugins/inputs/mqtt_consumer
 	fields = "_/_/_/_/_/value"
 ```
 
-Die weitere Konfiguration für Telegraf selbst, Telegraf und InlfuxDB 1.0 hier:
+Die weitere Konfiguration für Telegraf selbst, Telegraf und InlfuxDB v1 hier:
 
 https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md
 
