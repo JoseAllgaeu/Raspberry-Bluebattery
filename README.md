@@ -134,7 +134,7 @@ https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md
 https://github.com/influxdata/telegraf/tree/master/plugins/outputs/influxdb
 
 ### MQTT Explorer
-Zur Kontrolle, ob die MQTT Datenkette von dem Batteriecomputer über den MQTT-Brocker bis zur Phyton Software funktioniert, bietet sich der MQTT-Explorer an. Einfach mit der IP-Adresse / DNS-Namen und Port 1883 mit dem Raspberry verbinden.
+Zur Kontrolle, ob die MQTT Datenkette von dem Batteriecomputer über den MQTT-Brocker bis zur Pyhton Software funktioniert, bietet sich der MQTT-Explorer an. Einfach mit der IP-Adresse / DNS-Namen und Port 1883 mit dem Raspberry verbinden.
 
 Webseite: https://mqtt-explorer.com/
 
