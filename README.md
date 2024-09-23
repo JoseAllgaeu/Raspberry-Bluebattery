@@ -199,7 +199,7 @@ Zuletzt den Datenbank Name, der der InfluxDB bzw. Telegraf Konfiguration als Dat
 
 ![image](https://github.com/user-attachments/assets/cb7013bb-1b04-4be3-8f18-5cd0b7d01034)
 
-## Grafana Dashboard
+### Grafana Dashboard
 Zuletzt die BlueBattery Dashboards hinzufügen. 
 Zuvor mit Notepad / Notepad++ in den Dashboard “JSON”-Dateien die Bluetooth MAC Adresse `AA:BB:CC:DD:EE` gegen die MAC-Adresse des vorhandenen Bluebattery Batterie Computer ersetzten.
 Hier eine Beispielszeile, kommt in der “JSON” Datei öfters vor:
